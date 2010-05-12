@@ -1,0 +1,36 @@
+Com4J
+
+The plugin allows you to invoke tlbimp from Maven, so you can use Maven to build Java modules to interface with COM type library.
+
+How to use
+
+<plugin>
+  <groupId>org.jvnet.com4j</groupId>
+  <artifactId>maven-com4j-plugin</artifactId>
+  <version>1.0</version>
+  <executions>
+    <execution>
+      <id>xxx</id>
+      <goals>
+        <goal>gen</goal>
+      </goals>
+      <configuration>
+        <package>com.xxx</package>
+        <libId>FCEB4068-E49A-416e-A1FC-45695FF937E1</libId>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+
+
+Goals
+
+Goals of this repo are:
+ * Provide script to build plugin
+ * Add some features useful for me
+
+Disclaimer
+
+Original (?) author of this plugin is Jason Thrasher. 
+Original jar file with source code can be found here: http://download.java.net/maven/2/org/jvnet/com4j/maven-com4j-plugin/1.0/ 
+
