@@ -1,2 +1,2 @@
  * If plugin deployed to internal maven repo or/and clojars.org
-   then Maven can download plugin from these repos
+   then Maven can't download plugin from these repos
