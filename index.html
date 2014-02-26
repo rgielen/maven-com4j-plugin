@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Maven-com4j-plugin : The plugin allows you to invoke tlbimp from Maven, so you can use Maven to build Java modules to interface with COM type library" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Maven-com4j-plugin</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rgielen/maven-com4j-plugin">View on GitHub</a>
+
+          <h1 id="project_title">Maven-com4j-plugin</h1>
+          <h2 id="project_tagline">The plugin allows you to invoke tlbimp from Maven, so you can use Maven to build Java modules to interface with COM type library</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rgielen/maven-com4j-plugin/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rgielen/maven-com4j-plugin/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="maven-com4j-plugin" class="anchor" href="#maven-com4j-plugin"><span class="octicon octicon-link"></span></a>maven-com4j-plugin</h2>
+
+<p>The plugin allows you to invoke tlbimp from Maven, so you can use Maven to build Java modules to interface with COM type library.</p>
+
+<p>The main enhancement over the original plugin from Jason Thrasher is the possibility to address multiple dependent typelibs at a time. This enhancement was done by Sergey Miryanov. In this particular fork, the code is enhanced to correctly support maven plugin conventions and to aim for Maven Central deployment. See below for kudos and additional references.</p>
+
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<pre><code>&lt;plugin&gt;
+  &lt;groupId&gt;net.rgielen&lt;/groupId&gt;
+  &lt;artifactId&gt;com4j-maven-plugin&lt;/artifactId&gt;
+  &lt;version&gt;1.0.3-SNAPSHOT&lt;/version&gt;
+  &lt;executions&gt;
+    &lt;execution&gt;
+      &lt;id&gt;generate com.foo.* package&lt;/id&gt;
+      &lt;goals&gt;
+        &lt;goal&gt;gen&lt;/goal&gt;
+      &lt;/goals&gt;
+      &lt;configuration&gt;
+        &lt;libraries&gt;
+          &lt;libConfig&gt;
+            &lt;package&gt;com.foo.xxx&lt;/package&gt;
+            &lt;libId&gt;FCEB4068-E49A-416e-A1FC-45695FF937E1&lt;/libId&gt;
+          &lt;/libConfig&gt;
+          &lt;libConfig&gt;
+            &lt;package&gt;com.foo.zzz&lt;/package&gt;
+            &lt;file&gt;zzz.dll&lt;/file&gt;
+          &lt;/libConfig&gt;
+        &lt;/libraries&gt;
+      &lt;/configuration&gt;
+    &lt;/execution&gt;
+  &lt;/executions&gt;
+&lt;/plugin&gt;
+</code></pre>
+
+<h2>
+<a name="disclaimer" class="anchor" href="#disclaimer"><span class="octicon octicon-link"></span></a>Disclaimer</h2>
+
+<p>The software is released under the MIT license: <a href="http://opensource.org/licenses/mit-license.php">http://opensource.org/licenses/mit-license.php</a></p>
+
+<p>Original author of this plugin is Jason Thrasher. </p>
+
+<p>Original jar file with source code can be found here: <a href="http://download.java.net/maven/2/org/jvnet/com4j/maven-com4j-plugin/1.0/">http://download.java.net/maven/2/org/jvnet/com4j/maven-com4j-plugin/1.0/</a> </p>
+
+<p>This is a fork of Sergey Miryanov's fork to bring the plugin to a general audience:
+<a href="https://github.com/sergey-miryanov/maven-com4j-plugin">https://github.com/sergey-miryanov/maven-com4j-plugin</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Maven-com4j-plugin maintained by <a href="https://github.com/rgielen">rgielen</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
