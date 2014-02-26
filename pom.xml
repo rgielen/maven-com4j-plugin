@@ -34,8 +34,8 @@
 
     <scm>
         <url>https://github.com/rgielen/maven-com4j-plugin</url>
-        <connection>https://github.com/rgielen/maven-com4j-plugin.git</connection>
-        <developerConnection>https://github.com/rgielen/maven-com4j-plugin.git</developerConnection>
+        <connection>scm:git:https://github.com/rgielen/maven-com4j-plugin.git</connection>
+        <developerConnection>scm:git:https://github.com/rgielen/maven-com4j-plugin.git</developerConnection>
     </scm>
 
     <distributionManagement>
@@ -49,20 +49,9 @@
         </snapshotRepository>
     </distributionManagement>
 
-    <repositories>
-        <repository>
-            <id>jenkins-releases</id>
-            <url>http://maven.jenkins-ci.org/content/repositories/releases</url>
-            <releases/>
-        </repository>
-    </repositories>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <com4j.version>20110320</com4j.version>
-        <!--
-        <com4j.version>20120426-2</com4j.version>
-        -->
     </properties>
 
     <dependencies>
