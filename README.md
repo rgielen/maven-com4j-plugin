@@ -11,7 +11,7 @@ How to use
     <plugin>
       <groupId>net.rgielen</groupId>
       <artifactId>com4j-maven-plugin</artifactId>
-      <version>1.0.3-SNAPSHOT</version>
+      <version>1.0.4</version>
       <executions>
         <execution>
           <id>generate com.foo.* package</id>
