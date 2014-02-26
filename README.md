@@ -38,6 +38,8 @@ How to use
 Disclaimer
 ----------
 
+The software is released under the MIT license: http://opensource.org/licenses/mit-license.php
+
 Original author of this plugin is Jason Thrasher. 
 
 Original jar file with source code can be found here: http://download.java.net/maven/2/org/jvnet/com4j/maven-com4j-plugin/1.0/ 
