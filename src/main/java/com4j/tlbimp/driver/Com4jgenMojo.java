@@ -41,7 +41,7 @@ public class Com4jgenMojo extends AbstractMojo implements ErrorListener {
 	 * The Maven Project. We'll add a new source directory to this project if
 	 * everthing is successful.
 	 * 
-	 * @parameter property="project"
+	 * @parameter default-value="${project}"
 	 * @required
 	 * @readonly
 	 */
